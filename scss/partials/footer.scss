@@ -1,0 +1,79 @@
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .social{
+    margin-right: 30px;
+    position: relative;
+    bottom: 20px;
+    a{
+      font-size: 14px; color: rgba($base, 0.5);
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    i{
+      margin-right: 5px;
+      position: relative;
+      top: 1px;
+      color:  rgba($base, 0.8);
+    }
+  }
+
+}
+
+.spacebar {
+    margin: 0 auto;
+  background: #71639F;
+  height: 70px;
+  width: 500px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px 10px 0 0;
+  padding-top: 20px;
+  transition: background 0.3s;
+  &:hover{
+    text-decoration: none;
+    background: lighten(#71639F, 2%);
+  }
+  p{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba($base, 0.5);
+    font-size: 16px;
+  }
+}
+
+
+.spacebar_pulse{
+  @extend .spacebar;
+  background: transparent;
+  border: 1px solid rgba($base, 0.2);
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  height: 90px;
+  width: 500px;
+  &:hover{
+    text-decoration: none;
+    background: transparent;
+  }
+  -webkit-animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: pulsate 2s ease-out;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation: pulsate 2s ease-out;
+  -ms-animation-iteration-count: infinite;
+  animation: pulsate 2s ease-out;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes "pulsate" {
+  0% {-webkit-transform: scale(0.8, 0.5); opacity: 1;}
+  50% {opacity: 8.0;}
+  100% {-webkit-transform: scale(1.1, 1.2); opacity: 0.0;}
+}
