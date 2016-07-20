@@ -8,6 +8,9 @@ Currently only front end is working.
 ##Still to do
 
 Create Databases ofcontent
+
 Serve dynamic content when pressing spacebar
+
 Allow switching betweeen categories
+
 Create Multiple themes and allow for switching between these
